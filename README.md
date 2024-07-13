@@ -1,2 +1,59 @@
 # Pfrisk
-This is the simplest module for quick work with proxy.
+## What is this? ##
+This is the simplest module for quick work with proxy and ips. **The module allows you to work with proxy in just one line of** `code`, **without** the need **to manually getting geolocation, splitting ip:port, or getting ip from domain each time**
+
+
+## Using
+Let's import it first:
+First, import everything from the library (use the `from `...` import *` construct).
+
+Examples of all operations:
+
+### proxy
+Enabling proxy using the `enable_proxy()` function:
+
+`Pfrisk.enable_proxy()`
+
+Changing proxy settings using the `change_proxy(ip, port)` function:
+
+
+    ip = "127.0.0.1"
+    port = "8080"
+    Pfrisk.change_proxy(ip, port)
+
+
+Disabling proxy using the `disable_proxy()` function:
+
+`Pfrisk.disable_proxy()`
+
+### ip
+
+Getting ip range using the `get_iprange(ip_address, subnet_mask)` function:
+
+    ip_address = "173.194.222.100"
+    subnet_mask = '24'
+    Pfrisk.get_iprange()
+
+Getting geolocation using the `get_geolocation(ip_address)` function:
+
+    ip_address = "173.194.222.100"
+    Pfrisk.get_geolocation(ip_address)
+
+Getting ip from domain using the `get_ip_from_domain(domain_name)` function:
+
+    domain_name = "google.com"
+    Pfrisk.get_ip_from_domain(domain_name)
+
+### helper
+Getting free proxy using the `get_free_proxies()` function:
+
+`Pfrisk.get_free_proxies()`
+
+Getting free proxy using the `split_ip_port(ip_port_str)` function:
+
+`Pfrisk.split_ip_port(ip_port_str)`
+
+## Developer ##
+My youtube: [link](http://www.youtube.com/@AkaruiNeko/) 
+
+My nickname: akaruineko
