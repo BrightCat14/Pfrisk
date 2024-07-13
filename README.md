@@ -49,7 +49,7 @@ Getting free proxy using the `get_free_proxies()` function:
 
 `Pfrisk.get_free_proxies()`
 
-Getting free proxy using the `split_ip_port(ip_port_str)` function:
+Splitting ip:port using the `split_ip_port(ip_port_str)` function:
 
 `Pfrisk.split_ip_port(ip_port_str)`
 
